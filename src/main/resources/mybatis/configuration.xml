@@ -2,7 +2,7 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-    <typeAliases>
+  <!--   <typeAliases>
     	<typeAlias alias="UsersVo" type="com.javaex.vo.UsersVo" />
     	<typeAlias alias="BlogVo" type="com.javaex.vo.BlogVo" />
     	<typeAlias alias="CategoryVo" type="com.javaex.vo.CategoryVo" />
@@ -16,5 +16,5 @@
         <mapper resource="mybatis/mappers/category.xml" />
         <mapper resource="mybatis/mappers/post.xml" />
         <mapper resource="mybatis/mappers/comments.xml" />
-    </mappers>
+    </mappers> -->
 </configuration>
