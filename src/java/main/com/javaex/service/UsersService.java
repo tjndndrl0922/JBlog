@@ -33,4 +33,9 @@ public class UsersService {
 		}
 		return result;
 	}
+	
+	public UsersVo login(UsersVo usersVo) {
+		System.out.println("UsersService-login");
+		return usersDao.selectUser(usersVo);
+	}
 }

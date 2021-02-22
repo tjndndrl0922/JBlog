@@ -23,4 +23,10 @@ public class UsersDao {
 		System.out.println("UsersDao-selectOne()");
 		return sqlSession.selectOne("users.selectById", id);
 	}
+	
+	//로그인
+	public UsersVo selectUser(UsersVo usersVo) {
+		System.out.println("UsersDao-selectUser()");
+		return sqlSession.selectOne("user.selectUser", usersVo);
+	}
 }

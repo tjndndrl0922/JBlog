@@ -26,6 +26,20 @@
 			FROM users
 			where id = #{id}
 		]]>
-	
+
 	</select>
+	
+	<!-- 로그인 -->
+	<select id="selectUser" parameterType="com.javaex.vo.UsersVo" resultType="com.javaex.vo.UsersVo">
+		<![CDATA[
+			SELECT  userNo,
+			        userName    
+			FROM users
+			where id = #{id}
+			and password = #{password}
+		]]>
+	</select>
+	
+	
+	
 </mapper>
